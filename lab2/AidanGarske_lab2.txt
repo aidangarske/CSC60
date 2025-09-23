@@ -1,0 +1,17 @@
+Script started on 2025-09-04 10:05:36-07:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="179" LINES="81"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab2[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab2[00m$ gcc -[K[K[K[K[Kgit statusspush origin bind9-fips-support commit -m "Add docker and patch and script"status[Kcheckout -b bind9-fips-supportstatus[Kcommit -m "Add docker and patch and script"[12Ppush origin bind9-fips-support statuss[K[K[K[K[K[K[K[K[K[K[K[Kgcc -o lab2 lab2-AG.c
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab2[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab2[00m$ ls
+[?2004lAidanGarske_lab2.txt  [0m[01;32ma.out[0m  [01;32mlab2[0m  lab2-AG.c
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab2[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab2[00m$ ./lab2
+[?2004lNum2 is larger
+
+Lab 2. 
+
+Hello World!
+Hi, Aidan Garske.
+Belive you can and you are halfway there.
+-Theodore Roosevelt
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab2[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab2[00m$ exit
+[?2004lexit
+
+Script done on 2025-09-04 10:06:14-07:00 [COMMAND_EXIT_CODE="0"]

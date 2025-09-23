@@ -1,0 +1,36 @@
+Script started on 2025-09-21 09:01:00-07:00 [TERM="xterm-256color" TTY="/dev/pts/15" COLUMNS="124" LINES="20"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ . "/home/aidangarske/.cursor-server/cli/servers/Stable-d750e54bba5cffada6d7b3d18e5688ba5e944ad0/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[48Pgit push padelsbach wp_test_deb_ci0 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Porigin[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Ppadelsbach[6Pfetch[C[C[C[C[C[C[C[C[C[C[C[7Premote -vcommit -m "Sync debian package branches"status[K[K[K]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ [7mcc -c main.c[27m
+[7mcc -c fun1.c[27m
+[7mcc -c fun2_3.c[27m[A[A]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ cc -c main.c
+cc -c fun1.c
+cc -c fun2_3.c
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ [7mar rcs funs.a fun1.o fun2_3.o[27mar rcs funs.a fun1.o fun2_3.o
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ [7mcc -o lab4 main.o funs.a[27mcc -o lab4 main.o funs.a
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ ./lab4 yp[Koyo
+[?2004lRunning program "./lab4" with parameter "yoyo"
+Enter an integer: 5
+Using number 5
+The square of 5 is 000025
+The next num is 000006
+The half of 5 is   2.50
+Enter an integer: 27
+Using number 27
+The square of 27 is 000729
+The next num is 000028
+The half of 27 is  13.50
+Enter an integer: 8
+Using number 8
+The square of 8 is 000064
+The next num is 000009
+The half of 8 is   4.00
+Enter an integer: 0
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ zip -rv lab4Files.zip *.c
+[?2004l  adding: fun1.c	(in=136) (out=113) (deflated 17%)
+  adding: fun2_3.c	(in=206) (out=146) (deflated 29%)
+  adding: main.c	(in=1022) (out=480) (deflated 53%)
+total bytes=1364, compressed=739 -> 46% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab4[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab4[00m$ exit
+[?2004lexit
+
+Script done on 2025-09-21 09:03:25-07:00 [COMMAND_EXIT_CODE="0"]
