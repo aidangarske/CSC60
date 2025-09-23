@@ -1,407 +1,0 @@
-Script started on 2025-09-14 13:10:00-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="91" LINES="50"]
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ bash
-[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ PS1=""l"a"b"3"$"
-[?2004l[?2004hlab3$cd CSC[K[K[K[K[K[Kpwd
-[?2004l/home/aidangarske/CSC60
-[?2004hlab3$mkdir lab3
-[?2004lmkdir: cannot create directory ‘lab3’: File exists
-[?2004hlab3$cd lab3
-[?2004l[?2004hlab3$ls
-[?2004l[0m[01;34maaa[0m
-[?2004hlab3$cd aaa
-[?2004l[?2004hlab3$ls
-[?2004l[?2004hlab3$pwd
-[?2004l/home/aidangarske/CSC60/lab3/aaa
-[?2004hlab3$cd ..
-[?2004l[?2004hlab3$pwd
-[?2004l/home/aidangarske/CSC60/lab3
-[?2004hlab3$c[Kcp /etc/grp[Koup file1
-[?2004l[?2004hlab3$ls
-[?2004l[0m[01;34maaa[0m  file1
-[?2004hlab3$cat file1
-[?2004lroot:x:0:
-daemon:x:1:
-bin:x:2:
-sys:x:3:
-adm:x:4:syslog,davidgarske,aidangarske
-tty:x:5:
-disk:x:6:
-lp:x:7:
-mail:x:8:
-news:x:9:
-uucp:x:10:
-man:x:12:
-proxy:x:13:
-kmem:x:15:
-dialout:x:20:
-fax:x:21:
-voice:x:22:
-cdrom:x:24:davidgarske,aidangarske
-floppy:x:25:
-tape:x:26:
-sudo:x:27:davidgarske,aidangarske
-audio:x:29:
-dip:x:30:davidgarske,aidangarske
-www-data:x:33:
-backup:x:34:
-operator:x:37:
-list:x:38:
-irc:x:39:
-src:x:40:
-shadow:x:42:
-utmp:x:43:
-video:x:44:ollama
-sasl:x:45:
-plugdev:x:46:davidgarske,aidangarske
-staff:x:50:
-games:x:60:
-users:x:100:davidgarske,aidangarske
-nogroup:x:65534:
-systemd-journal:x:999:
-systemd-network:x:998:
-crontab:x:997:
-systemd-timesync:x:996:
-messagebus:x:101:
-syslog:x:102:
-input:x:995:
-sgx:x:994:
-kvm:x:993:
-render:x:992:ollama
-systemd-resolve:x:991:
-_ssh:x:103:
-tss:x:104:
-ssl-cert:x:105:
-uuidd:x:106:
-systemd-oom:x:990:
-bluetooth:x:107:
-rdma:x:108:
-whoopsie:x:109:
-netdev:x:110:
-avahi:x:111:
-tcpdump:x:112:
-sssd:x:113:
-lpadmin:x:114:davidgarske,aidangarske
-fwupd-refresh:x:989:
-scanner:x:115:saned
-saned:x:116:
-geoclue:x:117:
-pipewire:x:118:
-gnome-remote-desktop:x:988:
-polkitd:x:987:
-rtkit:x:119:
-colord:x:120:
-nm-openvpn:x:121:
-gdm:x:122:
-lxd:x:123:
-nvidia-persistenced:x:124:
-gamemode:x:986:
-gnome-initial-setup:x:985:
-davidgarske:x:1000:
-ollama:x:984:davidgarske
-aidangarske:x:1001:
-swtpm:x:125:
-uml-net:x:126:
-docker:x:983:aidangarske
-ftp:x:127:
-ftpuser:x:1002:
-softhsm:x:982:
-[?2004hlab3$less file1
-[?2004l[?1049h[22;0;0t[50;1H[?1h=root:x:0:
-daemon:x:1:
-bin:x:2:
-sys:x:3:
-adm:x:4:syslog,davidgarske,aidangarske
-tty:x:5:
-disk:x:6:
-lp:x:7:
-mail:x:8:
-news:x:9:
-uucp:x:10:
-man:x:12:
-proxy:x:13:
-kmem:x:15:
-dialout:x:20:
-fax:x:21:
-voice:x:22:
-cdrom:x:24:davidgarske,aidangarske
-floppy:x:25:
-tape:x:26:
-sudo:x:27:davidgarske,aidangarske
-audio:x:29:
-dip:x:30:davidgarske,aidangarske
-www-data:x:33:
-backup:x:34:
-operator:x:37:
-list:x:38:
-irc:x:39:
-src:x:40:
-shadow:x:42:
-utmp:x:43:
-video:x:44:ollama
-sasl:x:45:
-plugdev:x:46:davidgarske,aidangarske
-staff:x:50:
-games:x:60:
-users:x:100:davidgarske,aidangarske
-nogroup:x:65534:
-systemd-journal:x:999:
-systemd-network:x:998:
-crontab:x:997:
-systemd-timesync:x:996:
-messagebus:x:101:
-syslog:x:102:
-input:x:995:
-sgx:x:994:
-kvm:x:993:
-render:x:992:ollama
-systemd-resolve:x:991:
-[7mfile1[27m[K[K_ssh:x:103:
-:[K[Ktss:x:104:
-:[K[Kssl-cert:x:105:
-:[K[Kuuidd:x:106:
-:[K[Ksystemd-oom:x:990:
-:[K[Kbluetooth:x:107:
-:[K[Krdma:x:108:
-:[K[Kwhoopsie:x:109:
-:[K[Knetdev:x:110:
-:[K[Kavahi:x:111:
-:[K[Ktcpdump:x:112:
-:[K[Ksssd:x:113:
-:[K[Klpadmin:x:114:davidgarske,aidangarske
-:[K[Kfwupd-refresh:x:989:
-:[K[Kscanner:x:115:saned
-:[K[Ksaned:x:116:
-:[K[Kgeoclue:x:117:
-:[K[Kpipewire:x:118:
-:[K[Kgnome-remote-desktop:x:988:
-:[K[Kpolkitd:x:987:
-:[K[Krtkit:x:119:
-:[K[Kcolord:x:120:
-:[K[Knm-openvpn:x:121:
-:[K[Kgdm:x:122:
-:[K[Klxd:x:123:
-:[K[Knvidia-persistenced:x:124:
-:[K[Kgamemode:x:986:
-:[K[Kgnome-initial-setup:x:985:
-:[K[Kdavidgarske:x:1000:
-:[K[Kollama:x:984:davidgarske
-:[K[Kaidangarske:x:1001:
-:[K[Kswtpm:x:125:
-:[K[Kuml-net:x:126:
-:[K[Kdocker:x:983:aidangarske
-:[K[Kftp:x:127:
-:[K[Kftpuser:x:1002:
-:[K[Ksofthsm:x:982:
-[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004hlab3$/system
-[?2004lbash: /system: No such file or directory
-[?2004hlab3$q[Kls -l *
-[?2004l-rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:11 file1
-
-aaa:
-total 0
-[?2004hlab3$file *
-[?2004laaa:   directory
-file1: ASCII text
-[?2004hlab3$cp file [K1 file2
-[?2004l[?2004hlab3$wc file1
-[?2004l  86   86 1413 file1
-[?2004hlab3$wc * 
-[?2004lwc: aaa: Is a directory
-      0       0       0 aaa
-     86      86    1413 file1
-     86      86    1413 file2
-    172     172    2826 total
-[?2004hlab3$grep system file1
-[?2004l[01;31m[Ksystem[m[Kd-journal:x:999:
-[01;31m[Ksystem[m[Kd-network:x:998:
-[01;31m[Ksystem[m[Kd-timesync:x:996:
-[01;31m[Ksystem[m[Kd-resolve:x:991:
-[01;31m[Ksystem[m[Kd-oom:x:990:
-[?2004hlab3$mkdir bbb
-[?2004l[?2004hlab3$cd bbb
-[?2004l[?2004hlab3$pwd
-[?2004l/home/aidangarske/CSC60/lab3/bbb
-[?2004hlab3$cp ../file1
-[?2004lcp: missing destination file operand after '../file1'
-Try 'cp --help' for more information.
-[?2004hlab3$cp ../file1 .
-[?2004l[?2004hlab3$cd bbb
-[?2004lbash: cd: bbb: No such file or directory
-[?2004hlab3$pwd
-[?2004l/home/aidangarske/CSC60/lab3/bbb
-[?2004hlab3$mv [K[K[Kls
-[?2004lfile1
-[?2004hlab3$mc file1 file3
-[?2004lCommand 'mc' not found, but can be installed with:
-sudo apt install mc
-[?2004hlab3$mc file1 file3[1P[1@v
-[?2004l[?2004hlab3$ls
-[?2004lfile3
-[?2004hlab3$cmp../[K[K[K ../file1 file3
-[?2004l[?2004hlab3$echo [K $?
-[?2004l0
-[?2004hlab3$diff ../fl[Kile1 file3
-[?2004l[?2004hlab3$diff ../file1 file3[C[C[C[C[C[12Pecho $?[C[C[C[C[Ccmp ../file1 file3[C[C[C[C[C[11Pecho $?
-[?2004l0
-[?2004hlab3$rm -i file3 file4
-[?2004lrm: remove regular file 'file3'? 
-rm: cannot remove 'file4': No such file or directory
-[?2004hlab3$rm -i file3 file4[C[C[C[C[C[10Pecho $?
-[?2004l1
-[?2004hlab3$ls -l 
-[?2004ltotal 4
--rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:12 file3
-[?2004hlab3$cd ..
-[?2004l[?2004hlab3$ls
-[?2004l[0m[01;34maaa[0m  [01;34mbbb[0m  file1  file2
-[?2004hlab3$pwd
-[?2004l/home/aidangarske/CSC60/lab3
-[?2004hlab3$rmdirb[K b<>t>a>r>[C[K[K[K[K[Kbb/
-[?2004lrmdir: failed to remove 'bbb/': Directory not empty
-[?2004hlab3$ls -l 
-[?2004ltotal 16
-drwxrwxr-x 2 aidangarske aidangarske 4096 Sep 14 13:03 [0m[01;34maaa[0m
-drwxrwxr-x 2 aidangarske aidangarske 4096 Sep 14 13:13 [01;34mbbb[0m
--rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:11 file1
--rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:12 file2
-[?2004hlab3$history 20
-[?2004l 2008  cp ../file1 .
- 2009  cd bbb
- 2010  pwd
- 2011  ls
- 2012  mc file1 file3
- 2013  mv file1 file3
- 2014  ls
- 2015  cmp ../file1 file3
- 2016  echo $?
- 2017  diff ../file1 file3
- 2018  echo $?
- 2019  rm -i file3 file4
- 2020  echo $?
- 2021  ls -l 
- 2022  cd ..
- 2023  ls
- 2024  pwd
- 2025  rmdir bbb/
- 2026  ls -l 
- 2027  history 20
-[?2004hlab3$!!
-[?2004lhistory 20
- 2008  cp ../file1 .
- 2009  cd bbb
- 2010  pwd
- 2011  ls
- 2012  mc file1 file3
- 2013  mv file1 file3
- 2014  ls
- 2015  cmp ../file1 file3
- 2016  echo $?
- 2017  diff ../file1 file3
- 2018  echo $?
- 2019  rm -i file3 file4
- 2020  echo $?
- 2021  ls -l 
- 2022  cd ..
- 2023  ls
- 2024  pwd
- 2025  rmdir bbb/
- 2026  ls -l 
- 2027  history 20
-[?2004hlab3$!<>#>
-[?2004lbash: !: event not found
-[?2004hlab3$!-2
-[?2004lls -l 
-total 16
-drwxrwxr-x 2 aidangarske aidangarske 4096 Sep 14 13:03 [0m[01;34maaa[0m
-drwxrwxr-x 2 aidangarske aidangarske 4096 Sep 14 13:13 [01;34mbbb[0m
--rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:11 file1
--rw-r--r-- 1 aidangarske aidangarske 1413 Sep 14 13:12 file2
-[?2004hlab3$set -o vi
-[?2004l[?2004hlab3$set -o vi[C[C[C[C[C
-[?2004l[?2004hlab3$-
-[?2004l-: command not found
-[?2004hlab3$set -o vim
-[?2004lbash: set: vim: invalid option name
-[?2004hlab3$set -o vi
-[?2004l[?2004hlab3$set -o vi[C[C[C[C[C
-[?2004l[?2004hlab3$-------
-[?2004l-------: command not found
-[?2004hlab3$ap[K[KAp<>c>r>
-[?2004lbash: syntax error near unexpected token `newline'
-[?2004hlab3$exit
-[?2004lexit
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ exit
-[?2004lexit
-
-Script done on 2025-09-14 13:17:17-07:00 [COMMAND_EXIT_CODE="2"]
-Script started on 2025-09-14 13:38:15-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="91" LINES="50"]
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ lab[K[K[K./lab3
-[?2004lEnter a number [decimal, octal, or hex]: 7
-
-For 1
-For 3
-For 5
-For 7
-
-While 1
-While 2
-While 3
-While 4
-While 5
-While 6
-While 7
-
-Do-While 1
-Do-While 2
-Do-While 3
-Do-While 4
-Do-While 5
-Do-While 6
-Do-While 7
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ ./lab3
-[?2004lEnter a number [decimal, octal, or hex]: 3
-
-For 1
-For 3
-
-While 1
-While 2
-While 3
-
-Do-While 1
-Do-While 2
-Do-While 3
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ ./lab3[2Pexit./lab3
-[?2004lEnter a number [decimal, octal, or hex]: 10
-
-For 1
-For 3
-For 5
-For 7
-For 9
-
-While 1
-While 2
-While 3
-While 4
-While 5
-While 6
-While 7
-
-Do-While 1
-Do-While 2
-Do-While 3
-Do-While 4
-Do-While 5
-Do-While 6
-Do-While 7
-Do-While 8
-Do-While 9
-Do-While 10
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ quit
-[?2004lCommand 'quit' not found, but can be installed with:
-sudo snap install quit
-[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ exit
-[?2004lexit
-
-Script done on 2025-09-14 13:38:41-07:00 [COMMAND_EXIT_CODE="127"]
