@@ -1,0 +1,78 @@
+Script started on 2025-09-27 12:04:19-07:00 [TERM="xterm-256color" TTY="/dev/pts/47" COLUMNS="247" LINES="20"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ makec[K clean
+[?2004lrm -f printRange *.o *.a
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ make
+[?2004lCompiling...
+gcc -c  -I ../include main.c
+Compiling getRange...
+gcc -c -I ../include getRange.c
+Compiling printFuns...
+gcc -c -I ../include printFuns.c
+Creating archive...
+ar vr lib.a getRange.o printFuns.o
+ar: creating lib.a
+a - getRange.o
+a - printFuns.o
+Linking...
+gcc main.o lib.a -o printRange
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ touch ../include/lab4[K5.h
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ make
+[?2004lmake: 'printRange' is up to date.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ make
+[?2004lmake: 'printRange' is up to date.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ ./Pri[K[K[KprintRange
+[?2004lUsage: <prog name> [arg]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ ./pr[K[K[K[K./printRange F[Ktest
+[?2004lRunning ./printRange with test
+
+
+Range Counter Report
+The count of integers in a range:
+
+1st Num 2nd Num # between
+-------- -------- ---------
+Enter first number: 5
+Enter last number: 26
+
+1st Num 2nd Num # between
+-------- -------- ---------
+     5      26      20
+Enter first number: 0
+Enter last number: 0
+Exiting program.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ make clean
+[?2004lrm -f printRange *.o *.a
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp/src[00m$ cd ..
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp[00m$ ./lab5.sh BAR[K[K[Ktest
+[?2004ltest
+== apple
+== orange
+== cherry
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp[00m$ find -ls
+[?2004l 52459541      4 drwxrwxr-x   4 aidangarske aidangarske     4096 Sep 27 11:47 .
+ 54305392      4 drwxrwxr-x   2 aidangarske aidangarske     4096 Sep 27 12:05 ./src
+ 54305393      4 -rw-rw-r--   1 aidangarske aidangarske      860 Sep 27 12:00 ./src/main.c
+ 54305395      4 -rw-rw-r--   1 aidangarske aidangarske      368 Sep 27 11:52 ./src/getRange.c
+ 54305405      0 -rw-rw-r--   1 aidangarske aidangarske        0 Sep 27 12:04 ./src/AidanGarske_lab5.txt
+ 54305397      4 -rw-rw-r--   1 aidangarske aidangarske      531 Sep 27 11:48 ./src/makefile
+ 54305396      4 -rw-rw-r--   1 aidangarske aidangarske      549 Sep 27 12:01 ./src/printFuns.c
+ 52459542      4 drwxrwxr-x   2 aidangarske aidangarske     4096 Sep 27 10:55 ./include
+ 52459546      4 -rw-rw-r--   1 aidangarske aidangarske      201 Sep 27 11:58 ./include/utils.h
+ 52459545      4 -rw-rw-r--   1 aidangarske aidangarske      104 Sep 27 12:04 ./include/lab5.h
+ 52459534      4 -rwxrwxr-x   1 aidangarske aidangarske      338 Sep 27 11:54 ./lab5.sh
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp[00m$ zip -rv ../myApp/[K[K[K[K[K[Klab5Files.zip *
+[?2004l  adding: include/	(in=0) (out=0) (stored 0%)
+  adding: include/utils.h	(in=201) (out=136) (deflated 32%)
+  adding: include/lab5.h	(in=104) (out=100) (deflated 4%)
+  adding: lab5.sh	(in=338) (out=236) (deflated 30%)
+  adding: src/	(in=0) (out=0) (stored 0%)
+  adding: src/main.c	(in=860) (out=411) (deflated 52%)
+  adding: src/getRange.c	(in=368) (out=207) (deflated 44%)
+  adding: src/AidanGarske_lab5.txt	(in=0) (out=0) (stored 0%)
+  adding: src/makefile	(in=531) (out=257) (deflated 52%)
+  adding: src/printFuns.c	(in=549) (out=273) (deflated 50%)
+total bytes=2951, compressed=1620 -> 45% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab5/myApp[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab5/myApp[00m$ exit
+[?2004lexit
+
+Script done on 2025-09-27 12:06:58-07:00 [COMMAND_EXIT_CODE="0"]
