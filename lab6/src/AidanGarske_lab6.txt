@@ -1,0 +1,73 @@
+Script started on 2025-10-04 17:42:31-07:00 [TERM="xterm-256color" TTY="/dev/pts/20" COLUMNS="147" LINES="13"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ make clean
+[?2004lrm -f bitwise *.o *.a
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ make
+[?2004lgcc -I ../include -Wall -Wextra -std=c11 -c main.c -o main.o
+gcc -I ../include -Wall -Wextra -std=c11 -c bitwiseOps.c -o bitwiseOps.o
+gcc -I ../include -Wall -Wextra -std=c11 -c convUtils.c -o convUtils.o
+gcc  -o bitwise main.o bitwiseOps.o convUtils.o
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ touch ../include [K/lab6.h 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ maketouch ../include/lab6.h make[Ktouch ../include/lab6.h [K.
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ touch ../include/lab6.h.make[K
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ maketouch ../include/lab6.h.make[K
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ rm -rf [7m../include/lab6.h.[27m../include/lab6.h.
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ ./bitwise 
+[?2004lUsage: ./bitwise <input-data-file>
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ ./bitwise yoyo.dat
+[?2004lError: cannot open in file 'yoyo.dat'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ ./bitwise ../data/input.dat 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ cat lab6.out
+[?2004lRead data: 2 [0x0002]
+In Binary:   0000 0000 0000 0000 0000 0000 0000 0010
+MaskIt:      0000 0000 0000 0000 0000 0010 0010 0010
+ShiftLeft:   0000 0000 0000 0000 0000 0000 0001 0000
+ShiftRight:  0000 0000 0000 0000 0000 0000 0000 0000
+Bit 5 is NOT set
+
+Read data: 19 [0x0013]
+In Binary:   0000 0000 0000 0000 0000 0000 0001 0011
+MaskIt:      0000 0000 0000 0000 0000 0010 0011 0011
+ShiftLeft:   0000 0000 0000 0000 0000 0000 1001 1000
+ShiftRight:  0000 0000 0000 0000 0000 0000 0000 0010
+Bit 5 is     set
+
+Read data: 2345 [0x0929]
+In Binary:   0000 0000 0000 0000 0000 1001 0010 1001
+MaskIt:      0000 0000 0000 0000 0000 1011 0010 1001
+ShiftLeft:   0000 0000 0000 0000 0100 1001 0100 1000
+ShiftRight:  0000 0000 0000 0000 0000 0001 0010 0101
+Bit 5 is NOT set
+
+Read data: 13395 [0x3453]
+In Binary:   0000 0000 0000 0000 0011 0100 0101 0011
+MaskIt:      0000 0000 0000 0000 0011 0110 0111 0011
+ShiftLeft:   0000 0000 0000 0001 1010 0010 1001 1000
+ShiftRight:  0000 0000 0000 0000 0000 0110 1000 1010
+Bit 5 is     set
+
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ make clean
+[?2004lrm -f bitwise *.o *.a
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6/src[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6/src[00m$ cd ..
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6[00m$ zip [7m-rv lab6Files.zip *[27m-rv lab6Files.zip *
+[?2004l  adding: data/	(in=0) (out=0) (stored 0%)
+  adding: data/input.dat	(in=16) (out=16) (stored 0%)
+  adding: include/	(in=0) (out=0) (stored 0%)
+  adding: include/lab6.h	(in=363) (out=205) (deflated 44%)
+  adding: src/	(in=0) (out=0) (stored 0%)
+  adding: src/main.c	(in=2157) (out=746) (deflated 65%)
+  adding: src/convUtils.c	(in=1081) (out=544) (deflated 50%)
+  adding: src/lab6.out	(in=1016) (out=211) (deflated 79%)
+  adding: src/AidanGarske_lab6.txt	(in=4096) (out=696) (deflated 83%)
+  adding: src/Makefile	(in=303) (out=210) (deflated 31%)
+  adding: src/bitwiseOps.c	(in=459) (out=243) (deflated 47%)
+total bytes=9491, compressed=2871 -> 70% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab6[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab6[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-04 17:45:23-07:00 [COMMAND_EXIT_CODE="0"]
