@@ -1,0 +1,55 @@
+Script started on 2025-10-11 13:41:41-07:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="254" LINES="20"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ make clean
+[?2004lmake: *** No rule to make target 'clean'.  Stop.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60[00m$ cd lab7
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34mdata[0m  [01;34minclude[0m  levelCountReport.txt  [01;34mlib[0m  makefile  [01;34msrc[0m
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ make clean
+[?2004lrm -f -r bin lib
+make -C src clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab7/src'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab7/src'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ make
+[?2004lmkdir -p bin lib
+make -C src
+make[1]: Entering directory '/home/aidangarske/CSC60/lab7/src'
+gcc -Wall -g -I../include -c lab7.c
+gcc -Wall -g -I../include -c utils.c
+gcc -Wall -g -I../include -c reportFns.c
+ar rcs ../lib/lab7.a utils.o reportFns.o
+gcc -Wall -g -I../include -o ../bin/lab7 lab7.o ../lib/lab7.a
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab7/src'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ ./bin/lab7 data [K[K[K[K[K[K la[K[Kdata/im[Knput.dat 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ cat levelCountReport.txt 
+[?2004lPest Observation Report
+
+The breakdown of pests observed:
+
+Level 1 pests count - 4
+Level 2 pests count - 10
+Level 3 pests count - 5
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ make clean
+[?2004lrm -f -r bin lib
+make -C src clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab7/src'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab7/src'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ zip -rv b[Klab7Files.x[Kzip[Kmake cleancat levelCountReport.txt [15Pmake clean[K[7mzip -rv lab7Files.zip *[27mzip -rv lab7Files.zip *
+[?2004l  adding: data/	(in=0) (out=0) (stored 0%)
+  adding: data/input.dat	(in=76) (out=31) (deflated 59%)
+  adding: include/	(in=0) (out=0) (stored 0%)
+  adding: include/lab7.h	(in=684) (out=380) (deflated 44%)
+  adding: levelCountReport.txt	(in=132) (out=88) (deflated 33%)
+  adding: makefile	(in=256) (out=175) (deflated 32%)
+  adding: src/	(in=0) (out=0) (stored 0%)
+  adding: src/lab7.c	(in=405) (out=258) (deflated 36%)
+  adding: src/makefile	(in=544) (out=263) (deflated 52%)
+  adding: src/reportFns.c	(in=938) (out=393) (deflated 58%)
+  adding: src/utils.c	(in=2078) (out=805) (deflated 61%)
+total bytes=5113, compressed=2393 -> 53% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab7[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab7[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-11 14:16:59-07:00 [COMMAND_EXIT_CODE="0"]
