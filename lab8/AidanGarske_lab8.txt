@@ -1,0 +1,44 @@
+Script started on 2025-10-25 12:33:02-07:00 [TERM="xterm-256color" TTY="/dev/pts/27" COLUMNS="116" LINES="15"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ mke [K[K[Kake clean
+[?2004lrm -f lab8 *.o
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -o lab8 lab8.c
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ ./lab8 > lab8.out 2> lab8.err
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ cat lab8.out
+[?2004lArray in forward direction: m n o p q r s t u
+Array in reverse direction: u t s r q p o n m
+The middle element is 'q' and its address is 4 bytes from the array beginning
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ cat [K[K[K[K
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ cat lab8.err
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ 
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ make clean
+[?2004lrm -f lab8 *.o
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ ./lab8 abcdefg
+[?2004lbash: ./lab8: No such file or directory
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ l[Kmake
+[?2004lgcc -Wall -Wextra -std=c11 -o lab8 lab8.c
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ make./lab8 abcdefg
+[?2004lArray in forward direction: a b c d e f g
+Array in reverse direction: g f e d c b a
+The middle element is 'd' and its address is 3 bytes from the array beginning
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ ./lab8 abcdefg[K[K[K[K[K[K[Kdfndlkjbdkjsbfljdb
+[?2004lArray in forward direction: d f n d l k j b d k j s b f l j d b
+Array in reverse direction: b d j l f b s j k d b j k l d n f d
+The middle element is 'k' and its address is 9 bytes from the array beginning
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ ./lab8 dfndlkjbdkjsbfljdb[Kwersdf[K[K[K[K[K[K
+[?2004lArray in forward direction: m n o p q r s t u
+Array in reverse direction: u t s r q p o n m
+The middle element is 'q' and its address is 4 bytes from the array beginning
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ zip -rv lab8Files.zip *
+[?2004l  adding: AidanGarske_lab8.txt	(in=0) (out=0) (stored 0%)
+  adding: lab8	(in=16512) (out=3242) (deflated 80%)
+  adding: lab8.c	(in=1987) (out=773) (deflated 61%)
+  adding: lab8.err	(in=0) (out=0) (stored 0%)
+  adding: lab8.out	(in=170) (out=122) (deflated 28%)
+  adding: Makefile	(in=178) (out=142) (deflated 20%)
+total bytes=18847, compressed=4279 -> 77% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab8[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab8[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-25 12:36:06-07:00 [COMMAND_EXIT_CODE="0"]

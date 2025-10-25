@@ -1,0 +1,3 @@
+Array in forward direction: m n o p q r s t u
+Array in reverse direction: u t s r q p o n m
+The middle element is 'q' and its address is 4 bytes from the array beginning
