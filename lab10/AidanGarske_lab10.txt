@@ -1,0 +1,149 @@
+Script started on 2025-11-11 13:47:13-08:00 [TERM="xterm-256color" TTY="/dev/pts/37" COLUMNS="277" LINES="21"]
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ exit[Kexit./bin/lab10export LAB10=”FOO”make[K clean. "/home/aidangarske/.cursor-server/cli/servers/Stable-63fcac100bd5d5749f2a98aa47d65f6eca61db30/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K. "/home/aidangarske/.cursor-server/cli/servers/Stable-63fcac100bd5d5749f2a98aa47d65f6eca61db30/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[K[K clean
+[?2004lrm -f -r bin lib
+make -C src/student clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/student'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/student'
+make -C src/reports clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/reports'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/reports'
+make -C src/sigUtils clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+make -C src/main clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/main'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/main'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ make clean[6Pexit./bin/lab10export LAB10=”FOO”make[K
+[?2004lmkdir -p bin lib
+make -C src/student
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/student'
+gcc -Wall -g -I../../include -c studUtils.c
+gcc -Wall -g -I../../include -c providedUtils.c
+ar rcs ../../lib/student.a studUtils.o providedUtils.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/student'
+make -C src/reports
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/reports'
+gcc -Wall -g -I../../include -c reports.c
+ar rcs ../../lib/reports.a reports.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/reports'
+make -C src/sigUtils
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+gcc -Wall -g -I../../include -c sigUtils.c
+ar rcs ../../lib/sigUtils.a sigUtils.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+make -C src/main
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/main'
+gcc -Wall -g -I../../include -c lab10.c
+gcc -Wall -g -I../../include -o ../../bin/lab10 lab10.o ../../lib/student.a ../../lib/reports.a ../../lib/sigUtils.a
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/main'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ make clean[6Pexit./bin/lab10export LAB10=”FOO”
+[?2004l[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ export LAB10=”FOO”make[K clean[6Pexitmake clean[6Pexit./bin/lab10export LAB10=”FOO”[7P./bin/lab10[K]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ ./bin/lab10
+[?2004lCSc60 Lab10: Linked Lists, Environment Vars & Signals
+
+Running Student Report:
+=== Student report [Forward]===
+ID: 6578	Name: Bob Jackson
+Major Code: 37;	Expected Grad: Fall2026
+ID: 7775	Name: Betty Boop
+Major Code: 0;	Expected Grad: Spr2027
+ID: 4357	Name: Samuel Johnson
+Major Code: 73;	Expected Grad: Fall2026
+ID: 3564	Name: Jimmy Smith
+Major Code: 42;	Expected Grad: Spr2026
+
+Running Student Report:
+=== Student report [Reverse]===
+ID: 3564	Name: Jimmy Smith
+Major Code: 42;	Expected Grad: Spr2026
+ID: 4357	Name: Samuel Johnson
+Major Code: 73;	Expected Grad: Fall2026
+ID: 7775	Name: Betty Boop
+Major Code: 0;	Expected Grad: Spr2027
+ID: 6578	Name: Bob Jackson
+Major Code: 37;	Expected Grad: Fall2026
+
+Starting signal test loop [3670280]
+Current setting of LAB10": ”FOO”
+Updated setting of LAB10": YOYO
+Looping: LAB10 is "YOYO"
+Looping: LAB10 is "YOYO"
+Looping: LAB10 is "YOYO"
+PID [3670280] caught sig 10
+Handling SIGUSR1...
+Looping: LAB10 is "UPDATED_USR1"
+Looping: LAB10 is "UPDATED_USR1"
+Looping: LAB10 is "UPDATED_USR1"
+PID [3670280] caught sig 12
+Handling SIGUSR2...
+Looping: LAB10 is "UPDATED_USR2"
+Looping: LAB10 is "UPDATED_USR2"
+Looping: LAB10 is "UPDATED_USR2"
+Looping: LAB10 is "UPDATED_USR2"
+Quit
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ make clean
+[?2004lrm -f -r bin lib
+make -C src/student clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/student'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/student'
+make -C src/reports clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/reports'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/reports'
+make -C src/sigUtils clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/sigUtils'
+make -C src/main clean
+make[1]: Entering directory '/home/aidangarske/CSC60/lab10/src/main'
+rm -f *.o
+make[1]: Leaving directory '/home/aidangarske/CSC60/lab10/src/main'
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ [7m zip -rv lab10Files.zip *[27m zip -rv lab10Files.zip *[C[1P
+[?2004l  adding: AidanGarske_lab10.txt	(in=4096) (out=879) (deflated 79%)
+  adding: include/	(in=0) (out=0) (stored 0%)
+  adding: include/lab10.h	(in=1154) (out=551) (deflated 52%)
+  adding: makefile	(in=358) (out=199) (deflated 44%)
+  adding: src/	(in=0) (out=0) (stored 0%)
+  adding: src/sigUtils/	(in=0) (out=0) (stored 0%)
+  adding: src/sigUtils/sigUtils.c	(in=2052) (out=630) (deflated 69%)
+  adding: src/sigUtils/makefile	(in=348) (out=218) (deflated 37%)
+  adding: src/student/	(in=0) (out=0) (stored 0%)
+  adding: src/student/providedUtils.c	(in=1160) (out=394) (deflated 66%)
+  adding: src/student/makefile	(in=454) (out=241) (deflated 47%)
+  adding: src/student/studUtils.c	(in=1447) (out=607) (deflated 58%)
+  adding: src/main/	(in=0) (out=0) (stored 0%)
+  adding: src/main/lab10.c	(in=1436) (out=548) (deflated 62%)
+  adding: src/main/makefile	(in=380) (out=226) (deflated 41%)
+  adding: src/reports/	(in=0) (out=0) (stored 0%)
+  adding: src/reports/reports.c	(in=1337) (out=467) (deflated 65%)
+  adding: src/reports/makefile	(in=342) (out=217) (deflated 37%)
+total bytes=14564, compressed=5177 -> 64% savings
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ [7munzip -tv lab10Files.zip [27munzip -tv lab10Files.zip [K
+[?2004lArchive:  lab10Files.zip
+    testing: AidanGarske_lab10.txt    OK
+    testing: include/                 OK
+    testing: include/lab10.h          OK
+    testing: makefile                 OK
+    testing: src/                     OK
+    testing: src/sigUtils/            OK
+    testing: src/sigUtils/sigUtils.c   OK
+    testing: src/sigUtils/makefile    OK
+    testing: src/student/             OK
+    testing: src/student/providedUtils.c   OK
+    testing: src/student/makefile     OK
+    testing: src/student/studUtils.c   OK
+    testing: src/main/                OK
+    testing: src/main/lab10.c         OK
+    testing: src/main/makefile        OK
+    testing: src/reports/             OK
+    testing: src/reports/reports.c    OK
+    testing: src/reports/makefile     OK
+No errors detected in compressed data of lab10Files.zip.
+[?2004h]0;aidangarske@wolf-prec5560: ~/CSC60/lab10[01;32maidangarske@wolf-prec5560[00m:[01;34m~/CSC60/lab10[00m$ exit
+[?2004lexit
+
+Script done on 2025-11-11 13:49:36-08:00 [COMMAND_EXIT_CODE="0"]
